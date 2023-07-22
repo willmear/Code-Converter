@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  languages = ['Java', 'Python', 'C', 'C++', 'C#']
-  convertFrom: string;
-  convertTo: string;
+  languages = ['Java', 'Python', 'C', 'C++', 'C#'];
+  selectedLanguage: string = this.languages[0];
 
-  constructor() {
-    this.convertFrom = '';
-    this.convertTo = '';
-  }
+  constructor() {  }
 
   ngOnInit(): void {}
+
+  onConvert(convert: any) {
+    console.log(convert);
+  }
   
 
 }
