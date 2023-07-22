@@ -1,0 +1,23 @@
+.full-view-height {
+    height: 70vh;
+    margin: 5%;
+}
+
+.language-row {
+    height: 15%;
+    vertical-align: auto;
+}
+
+.select-box {
+    height: 40%;
+    width: 20%;
+    text-align: center;
+    font-size: large;
+}
+
+textarea {
+    height: 80%;
+    width: 80%;
+    outline: none;
+    resize: none;
+}

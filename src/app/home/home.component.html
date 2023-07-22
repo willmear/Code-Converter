@@ -1,0 +1,29 @@
+<div class="full-view-height">
+    <div class="row language-row">
+        <div class="col-6 text-center d-flex justify-content-center">
+            <label name="convertFrom"></label>
+            <select class="select-box" name="convertFrom" id="convertFrom">
+                <option *ngFor="let language of languages" value="language">{{ language }}</option>
+            </select>
+        </div>
+        <div class="col-6 text-center">
+            <label name="convertFrom"></label>
+            <select class="select-box" name="convertFrom" id="convertFrom">
+                <option *ngFor="let language of languages" value="language">{{ language }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row h-75">
+        <div class="col-6 text-center">
+            <textarea class="code" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" wrap="off" overflow="auto"></textarea>
+        </div>
+        <div class="col-6 text-center">
+            <textarea class="code" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" wrap="off" overflow="auto"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <button class="btn btn-primary">Convert</button>
+        </div>
+    </div>
+</div>
