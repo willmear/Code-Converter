@@ -29,7 +29,7 @@ public class OpenAiService {
     Map<String, Object> requestBody = new HashMap<>();
     requestBody.put("prompt", inputText);
     requestBody.put("model", "text-davinci-003");
-    requestBody.put("max_tokens", 256);
+    requestBody.put("max_tokens", 3000);
     requestBody.put("temperature", 0.2);
 
     HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
