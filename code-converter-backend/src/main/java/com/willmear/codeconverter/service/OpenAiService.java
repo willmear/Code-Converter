@@ -13,10 +13,12 @@ public class OpenAiService {
 
   private final RestTemplate restTemplate;
   private final String apiKey;
+  private final String openAiApiUrl;
 
-  public OpenAiService(RestTemplate restTemplate, @Value("${openai.api.key}") String apiKey) {
+  public OpenAiService(RestTemplate restTemplate, @Value("${apiKey}") String apiKey, @Value("${openai.api.url}") String openAiApiUrl) {
     this.restTemplate = restTemplate;
     this.apiKey = apiKey;
+    this.openAiApiUrl = openAiApiUrl;
   }
 
   public String callOpenAiApi(String inputText) {
@@ -32,7 +34,7 @@ public class OpenAiService {
 
     HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
     ResponseEntity<String> responseEntity = restTemplate.exchange(
-      "https://api.openai.com/v1/completions",
+      openAiApiUrl,
       HttpMethod.POST,
       requestEntity,
       String.class

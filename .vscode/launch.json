@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "CodeConverterApplication",
+      "request": "launch",
+      "mainClass": "com.willmear.codeconverter.CodeConverterApplication",
+      "projectName": "code-converter"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",
