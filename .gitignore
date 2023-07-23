@@ -1,6 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-/resources/application-dev.properties
+code-converter-backend/src/main/resources/application-dev.properties
 
 # Compiled output
 /dist
