@@ -3,13 +3,13 @@
         <div class="row language-row">
             <div class="col-6 text-center">
                 <label for="languageFrom"></label>
-                <select class="select-box" required name="languageFrom" [(ngModel)]="selectedLanguage">
+                <select class="select-box" required name="languageFrom" [(ngModel)]="languageFrom">
                     <option *ngFor="let language of languages" [ngValue]=language>{{ language }}</option>
                 </select>
             </div>
             <div class="col-6 text-center">
                 <label for="languageTo"></label>
-                <select class="select-box" name="languageTo" required [(ngModel)]="selectedLanguage">
+                <select class="select-box" name="languageTo" required [(ngModel)]="languageTo">
                     <option *ngFor="let language of languages" [ngValue]=language>{{ language }}</option>
                 </select>
             </div>
