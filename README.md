@@ -1,6 +1,6 @@
 # CodeConverter
 
-Simple full-stack app to translate given code between languages.
+Simple full-stack app to translate given code between languages using OpenAI API.
 
 ### How to run
 
