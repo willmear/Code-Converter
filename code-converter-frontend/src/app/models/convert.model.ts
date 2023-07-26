@@ -3,5 +3,4 @@ export interface IConvert {
     languageFrom: string;
     languageTo: string;
     prompt: string;
-    response: string;
 }

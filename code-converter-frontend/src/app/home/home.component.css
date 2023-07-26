@@ -15,9 +15,16 @@
     font-size: large;
 }
 
-textarea {
-    height: 80%;
-    width: 80%;
-    outline: none;
-    resize: none;
+.convert-button, select {
+    background-color: #263238;
+    color: #FFFFFF;
+}
+
+select {
+    border-radius: 5px;
+    border: 0;
+}
+
+.example-margin {
+    margin: 0 10px;
 }

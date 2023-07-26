@@ -15,18 +15,40 @@
             </div>
         </div>
         <div class="row h-75">
-            <div class="col-6 text-center">
-                <label for="code"></label>
-                <textarea id="code" name="code" type="text" class="code" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" wrap="off" overflow="auto" required ngModel></textarea>
+            <div class="col-6">
+                <ngx-codemirror
+                    name="code"
+                    [(ngModel)]="code"
+                    [options]="{
+                        lineNumbers: true,
+                        theme: 'material',
+                        mode: 'markdown'
+                    }"
+                ></ngx-codemirror>
             </div>
-            <div class="col-6 text-center">
-                <textarea class="code" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" wrap="off" overflow="auto"></textarea>
+            <div class="col-6 mx-auto">
+                <ngx-codemirror
+                    name="outputCode"
+                    [(ngModel)]="outputCode"
+                    [options]="{
+                        lineNumbers: true,
+                        theme: 'material',
+                        mode: 'markdown'
+                    }"
+                ></ngx-codemirror>
             </div>
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <button class="btn btn-primary">Convert</button>
+                <button class="btn convert-button">
+                    Convert
+                    <div *ngIf="isLoading">
+                        
+                    </div>
+                </button>
             </div>
         </div>
+        
     </form>
+    
 </div>
